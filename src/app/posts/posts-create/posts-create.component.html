@@ -1,11 +1,11 @@
 <mat-card>
-    <form>
-        <mat-form-field >
-          <input matInput placeholder="Favorite food" value="Sushi">
+    <form #formSavePost = "ngForm"  ngSubmit="onSave();" >
+        <mat-form-field>
+          <input matInput placeholder="Title" name="title" >
         </mat-form-field>
         <mat-form-field >
-          <textarea matInput placeholder="Leave a comment"></textarea>
+          <textarea matInput placeholder="Content" name="content" ></textarea>
         </mat-form-field>
-        <button mat-raised-button color="primary" >Save</button>
+        <button mat-raised-button color="primary" type="submit" >Save</button>
       </form>
 </mat-card>
