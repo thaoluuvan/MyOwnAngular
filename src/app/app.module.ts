@@ -45,12 +45,14 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsCreateComponent,
     PostsListComponent,
+    PipesComponent,
 
   ],
   imports: [

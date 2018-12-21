@@ -16,9 +16,10 @@ export class PostsCreateComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSave(data) {
+  onSave(data: ngForm) {
+    console.log(data.title + ': ' + data.content);
     console.log('Added post');
-   this.postService.addPost();
+  //  this.postService.addPost();
   }
 
 }
