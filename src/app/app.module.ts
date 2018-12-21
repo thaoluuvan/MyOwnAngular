@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PostsCreateComponent } from './posts/posts-create/posts-create.component';
 import { PostsListComponent } from './posts/posts-list/posts-list.component';
 import {FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -54,6 +55,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     MatAutocompleteModule,
     MatBadgeModule,
