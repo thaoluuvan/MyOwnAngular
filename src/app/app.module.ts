@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostsCreateComponent } from './posts/posts-create/posts-create.component';
@@ -91,8 +92,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatTooltipModule,
     MatTreeModule,
     FormsModule,
-    BrowserAnimationsModule
-  ],
+    BrowserAnimationsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

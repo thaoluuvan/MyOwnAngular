@@ -1,10 +1,10 @@
 <mat-card>
-    <form #formSavePost = "ngForm"  ngSubmit="onSave();" >
+    <form (submit)="onSave(postForm)" #postForm ="ngForm" >
         <mat-form-field>
-          <input matInput placeholder="Title" name="title" >
+          <input matInput placeholder="Title" name="title" ngModel >
         </mat-form-field>
         <mat-form-field >
-          <textarea matInput placeholder="Content" name="content" ></textarea>
+          <textarea matInput placeholder="Content" name="content" ngModel ></textarea>
         </mat-form-field>
         <button mat-raised-button color="primary" type="submit" >Save</button>
       </form>
