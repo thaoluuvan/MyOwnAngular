@@ -7,7 +7,7 @@ import { Post } from 'post.model';
   providedIn: 'root'
 })
 export class PostsService {
-  apiUrl = 'http://localhost:3000/posts';
+  apiUrl = 'http://localhost:3004/posts';
 
   constructor(private http: HttpClient) { }
 
@@ -17,8 +17,8 @@ export class PostsService {
   }
 
   getPosts() {
-    this.http.get<{posts: Post[]}>('apiUrl').subscribe((responeData) => {
-      console.log(responeData.posts);
+    this.http.get<{posts: Post[]}>(this.apiUrl).subscribe((responeData) => {
+      console.log(responeData);
     });
     console.log('Get post successfully!');
   }
