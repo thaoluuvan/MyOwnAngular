@@ -1,10 +1,10 @@
-<mat-accordion>
+<mat-accordion *ngFor="let item of posts">
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Self aware panel
+        {{item.title}}
       </mat-panel-title>
     </mat-expansion-panel-header>
-    this is panel's content
+       {{item.author}}
   </mat-expansion-panel>
 </mat-accordion>

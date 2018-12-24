@@ -11,6 +11,7 @@ import { NgForm } from '@angular/forms';
 export class PostsCreateComponent implements OnInit {
 
   constructor(private postService: PostsService) {
+
    }
 
   ngOnInit() {
@@ -18,6 +19,6 @@ export class PostsCreateComponent implements OnInit {
 
   onSave(data: NgForm) {
     this.postService.addPost(data.value.title, data.value.content);
-    this.postService.getPosts();
+    // this.postService.getPosts();
   }
 }
