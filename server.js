@@ -19,5 +19,4 @@ app.route(apiUrl).get((req, res) =>{
 app.route(apiUrl).post((req, res) =>{
   console.log("call post api");
   res.status(200).send({title: req.body.title, author: req.body.author});
-  res.end();
 });

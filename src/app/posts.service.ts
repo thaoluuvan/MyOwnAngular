@@ -8,7 +8,8 @@ import { Post } from 'post.model';
 })
 export class PostsService {
 
-  apiUrl = 'http://localhost:8000/api/posts';
+  // apiUrl = 'http://localhost:8000/api/posts'; // nodejs server
+  apiUrl = 'http://localhost:3000/posts';
 
   constructor(private http: HttpClient) { }
 
