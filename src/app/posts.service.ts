@@ -7,11 +7,9 @@ import { Post } from 'post.model';
   providedIn: 'root'
 })
 export class PostsService {
-
+  apiUrl = 'http://localhost:3000/posts';
   postsUpdated = new Subject<Post[]>();
   posts: Post[] = [];
-
-  apiUrl = 'http://localhost:3000/posts';
 
   constructor(private http: HttpClient) { }
 
